@@ -3,7 +3,7 @@ import Person from "../src/js/person.js";
 describe("Person", () => {
   let years = 25;
   let junkFood = "sometimes";
-  let sport = "somitimes";
+  let sport = "sometimes";
   let sleep = "enough";
   let laugh = "often";
   let newPerson;
@@ -42,8 +42,14 @@ describe("Person", () => {
   });
 
   test("should correctly return a user's life expectancy Human years", () => {
-    let personTwo = new Person(25, "often", "often", "less", "rare");
-    personTwo.getLifeExpectancy();
+    let newPerson = new Person(25, "often", "often", "less", "rare");
+    newPerson.getLifeExpectancy();
+    expect(newPerson.lifeExpectancy).toEqual(70);
+  });
+
+  test("should correctly return a user's life expectancy Human years", () => {
+    let newPerson = new Person(25, "rare", "rare", "more", "sometimes");
+    newPerson.getLifeExpectancy();
     expect(newPerson.lifeExpectancy).toEqual(80);
   });
 });
