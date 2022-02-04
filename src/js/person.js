@@ -35,9 +35,6 @@ export default class Person {
       case "rare":
         this.lifeExpectancy += 5;
         break;
-      case "sometimes":
-        this.lifeExpectancy = this.lifeExpectancy;
-        break;
       case "often":
         this.lifeExpectancy -= 5;
         break;
@@ -45,9 +42,6 @@ export default class Person {
     switch (this.sport) {
       case "rare":
         this.lifeExpectancy -= 5;
-        break;
-      case "sometimes":
-        this.lifeExpectancy = this.lifeExpectancy;
         break;
       case "often":
         this.lifeExpectancy += 5;
@@ -57,9 +51,6 @@ export default class Person {
       case "less":
         this.lifeExpectancy -= 5;
         break;
-      case "more":
-        this.lifeExpectancy = this.lifeExpectancy;
-        break;
       case "enough":
         this.lifeExpectancy += 5;
         break;
@@ -67,9 +58,6 @@ export default class Person {
     switch (this.laugh) {
       case "rare":
         this.lifeExpectancy -= 5;
-        break;
-      case "sometimes":
-        this.lifeExpectancy = this.lifeExpectancy;
         break;
       case "often":
         this.lifeExpectancy += 5;
