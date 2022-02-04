@@ -80,6 +80,8 @@ export default class Person {
   getYearsDifference() {
     if (this.lifeExpectancy > this.yearsEarth) {
       this.yearsLeft = this.lifeExpectancy - this.yearsEarth;
+    } else {
+      this.yearsPassed = this.yearsEarth - this.lifeExpectancy;
     }
   }
 }
