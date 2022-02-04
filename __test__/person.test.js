@@ -11,4 +11,8 @@ describe("Person", () => {
   test("should correctly create a person object with its human years", () => {
     expect(newPerson.yearsEarth).toEqual(25);
   });
+
+  test("should correctly return a user's age in Mercury years", () => {
+    expect(newPerson.getMercuryYears).toEqual(6);
+  });
 });
