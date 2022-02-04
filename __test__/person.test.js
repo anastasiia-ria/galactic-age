@@ -50,8 +50,8 @@ describe("Person", () => {
   });
 
   test("should correctly return how many years a user has left to live on Earth", () => {
-    let newPerson = new Person(25, "rare", "rare", "more", "sometimes");
     newPerson.getLifeExpectancy();
+    newPerson.getYearsDifference();
     expect(newPerson.yearsLeft).toEqual(65);
   });
 });

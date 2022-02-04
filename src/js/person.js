@@ -6,10 +6,8 @@ export default class Person {
     this.sleep = sleep;
     this.laugh = laugh;
     this.lifeExpectancy = 80;
-    this.yearsMercury = 0;
-    this.yearsVenus = 0;
-    this.yearsMars = 0;
-    this.yearsJupiter = 0;
+    this.yearsLeft = 0;
+    this.yearsPassed = 0;
   }
 
   getMercuryYears(years) {
@@ -76,6 +74,12 @@ export default class Person {
       case "often":
         this.lifeExpectancy += 5;
         break;
+    }
+  }
+
+  getYearsDifference() {
+    if (this.lifeExpectancy > this.yearsEarth) {
+      this.yearsLeft = this.lifeExpectancy - this.yearsEarth;
     }
   }
 }
