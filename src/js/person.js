@@ -12,20 +12,24 @@ export default class Person {
     this.yearsJupiter = 0;
   }
 
-  getMercuryYears() {
-    this.yearsMercury = Math.floor(this.yearsEarth * 0.24);
+  getMercuryYears(years) {
+    let mercuryYears = Math.floor(years * 0.24);
+    return mercuryYears;
   }
 
-  getVenusYears() {
-    this.yearsVenus = Math.floor(this.yearsEarth * 0.62);
+  getVenusYears(years) {
+    let venusYears = Math.floor(years * 0.62);
+    return venusYears;
   }
 
-  getMarsYears() {
-    this.yearsMars = Math.floor(this.yearsEarth * 1.88);
+  getMarsYears(years) {
+    let marsYears = Math.floor(years * 1.88);
+    return marsYears;
   }
 
-  getJupiterYears() {
-    this.yearsJupiter = Math.floor(this.yearsEarth * 11.86);
+  getJupiterYears(years) {
+    let jupiterYears = Math.floor(years * 11.86);
+    return jupiterYears;
   }
 
   getLifeExpectancy() {

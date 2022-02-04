@@ -17,23 +17,19 @@ describe("Person", () => {
   });
 
   test("should correctly return a user's age in Mercury years", () => {
-    newPerson.getMercuryYears();
-    expect(newPerson.yearsMercury).toEqual(6);
+    expect(newPerson.getMercuryYears(years)).toEqual(6);
   });
 
   test("should correctly return a user's age in Venus years", () => {
-    newPerson.getVenusYears();
-    expect(newPerson.yearsVenus).toEqual(15);
+    expect(newPerson.getVenusYears(years)).toEqual(15);
   });
 
   test("should correctly return a user's age in Mars years", () => {
-    newPerson.getMarsYears();
-    expect(newPerson.yearsMars).toEqual(47);
+    expect(newPerson.getMarsYears(years)).toEqual(47);
   });
 
   test("should correctly return a user's age in Jupiter years", () => {
-    newPerson.getJupiterYears();
-    expect(newPerson.yearsJupiter).toEqual(296);
+    expect(newPerson.getJupiterYears(years)).toEqual(296);
   });
 
   test("should correctly return a user's life expectancy Human years", () => {
