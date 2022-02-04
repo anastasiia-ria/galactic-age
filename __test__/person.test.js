@@ -13,6 +13,7 @@ describe("Person", () => {
   });
 
   test("should correctly return a user's age in Mercury years", () => {
-    expect(newPerson.getMercuryYears).toEqual(6);
+    newPerson.getMercuryYears();
+    expect(newPerson.yearsMercury).toEqual(6);
   });
 });
