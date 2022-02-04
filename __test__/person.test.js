@@ -40,4 +40,10 @@ describe("Person", () => {
     newPerson.getLifeExpectancy();
     expect(newPerson.lifeExpectancy).toEqual(90);
   });
+
+  test("should correctly return a user's life expectancy Human years", () => {
+    let personTwo = new Person(25, "often", "often", "less", "rare");
+    personTwo.getLifeExpectancy();
+    expect(newPerson.lifeExpectancy).toEqual(80);
+  });
 });
