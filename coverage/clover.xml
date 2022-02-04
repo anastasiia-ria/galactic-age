@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1643993111012" clover="3.2.0">
-  <project timestamp="1643993111012" name="All files">
-    <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3" elements="9" coveredelements="9" complexity="0" loc="6" ncloc="6" packages="1" files="1" classes="1"/>
+<coverage generated="1643993166586" clover="3.2.0">
+  <project timestamp="1643993166586" name="All files">
+    <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3" elements="10" coveredelements="10" complexity="0" loc="7" ncloc="7" packages="1" files="1" classes="1"/>
     <file name="person.js" path="/Users/anastasiiariabets/Desktop/galactic-age/src/js/person.js">
-      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <line num="3" count="3" type="stmt"/>
       <line num="4" count="3" type="stmt"/>
       <line num="5" count="3" type="stmt"/>
       <line num="6" count="3" type="stmt"/>
       <line num="7" count="3" type="stmt"/>
       <line num="11" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
