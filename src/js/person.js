@@ -7,5 +7,7 @@ export default class Person {
     this.yearsJupiter = 0;
   }
 
-  getMercuryYears() {}
+  getMercuryYears() {
+    this.yearsMercury = this.yearsEarth * 0.24;
+  }
 }
