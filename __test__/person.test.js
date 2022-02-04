@@ -54,4 +54,11 @@ describe("Person", () => {
     newPerson.getYearsDifference();
     expect(newPerson.yearsLeft).toEqual(65);
   });
+
+  test("should correctly return how many years a user has lived past the life expactancy on Earth", () => {
+    newPerson.yearsEarth = 100;
+    newPerson.getLifeExpectancy();
+    newPerson.getYearsDifference();
+    expect(newPerson.yearsPassed).toEqual(10);
+  });
 });
