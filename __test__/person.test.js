@@ -17,23 +17,23 @@ describe("Person", () => {
   });
 
   test("should correctly return a user's age in Mercury years", () => {
-    expect(newPerson.getGalacticYears(years, "mercury")).toEqual(6);
+    expect(newPerson.getGalacticYears(years, "mercury")).toEqual(104.17);
   });
 
   test("should correctly return a user's age in Venus years", () => {
-    expect(newPerson.getGalacticYears(years, "venus")).toEqual(15);
+    expect(newPerson.getGalacticYears(years, "venus")).toEqual(40.32);
   });
 
   test("should correctly return a user's age in Mars years", () => {
-    expect(newPerson.getGalacticYears(years, "mars")).toEqual(47);
+    expect(newPerson.getGalacticYears(years, "mars")).toEqual(13.3);
   });
 
   test("should correctly return a user's age in Jupiter years", () => {
-    expect(newPerson.getGalacticYears(years, "jupiter")).toEqual(296);
+    expect(newPerson.getGalacticYears(years, "jupiter")).toEqual(2.11);
   });
 
   test("should correctly return a user's age in Saturn years", () => {
-    expect(newPerson.getGalacticYears(years, "saturn")).toEqual(736);
+    expect(newPerson.getGalacticYears(years, "saturn")).toEqual(0.85);
   });
 
   test("should correctly return a user's life expectancy Human years", () => {
