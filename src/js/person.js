@@ -1,3 +1,5 @@
 export default class Person {
-  constructor() {}
+  constructor(yearsEarth) {
+    this.yearsEarth = yearsEarth;
+  }
 }
