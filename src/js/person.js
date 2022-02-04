@@ -14,16 +14,19 @@ export default class Person {
     let planetYears;
     switch (planet) {
       case "mercury":
-        planetYears = Math.floor(years * 0.24);
+        planetYears = Math.round((years / 0.24) * 100) / 100;
         break;
       case "venus":
-        planetYears = Math.floor(years * 0.62);
+        planetYears = Math.round((years / 0.62) * 100) / 100;
         break;
       case "mars":
-        planetYears = Math.floor(years * 1.88);
+        planetYears = Math.round((years / 1.88) * 100) / 100;
         break;
       case "jupiter":
-        planetYears = Math.floor(years * 11.86);
+        planetYears = Math.round((years / 11.86) * 100) / 100;
+        break;
+      case "saturn":
+        planetYears = Math.round((years / 29.48) * 100) / 100;
         break;
       default:
         planetYears = years;
