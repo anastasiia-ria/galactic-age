@@ -19,5 +19,7 @@ export default class Person {
     this.yearsMars = Math.floor(this.yearsEarth * 1.88);
   }
 
-  getJupiterYears() {}
+  getJupiterYears() {
+    this.yearsJupiter = Math.floor(this.yearsEarth * 11.86);
+  }
 }
