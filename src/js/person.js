@@ -8,6 +8,8 @@ export default class Person {
   }
 
   getMercuryYears() {
-    this.yearsMercury = this.yearsEarth * 0.24;
+    this.yearsMercury = Math.floor(this.yearsEarth * 0.24);
   }
+
+  getVenusYears() {}
 }
