@@ -10,24 +10,23 @@ export default class Person {
     this.yearsPassed = 0;
   }
 
-  getMercuryYears(years) {
-    let mercuryYears = Math.floor(years * 0.24);
-    return mercuryYears;
-  }
-
-  getVenusYears(years) {
-    let venusYears = Math.floor(years * 0.62);
-    return venusYears;
-  }
-
-  getMarsYears(years) {
-    let marsYears = Math.floor(years * 1.88);
-    return marsYears;
-  }
-
-  getJupiterYears(years) {
-    let jupiterYears = Math.floor(years * 11.86);
-    return jupiterYears;
+  getGalacticYears(years, planet) {
+    let planetYears;
+    switch (planet) {
+      case "mercury":
+        planetYears = Math.floor(years * 0.24);
+        break;
+      case "venus":
+        planetYears = Math.floor(years * 0.62);
+        break;
+      case "mars":
+        planetYears = Math.floor(years * 1.88);
+        break;
+      case "jupiter":
+        planetYears = Math.floor(years * 11.86);
+        break;
+    }
+    return planetYears;
   }
 
   getLifeExpectancy() {
