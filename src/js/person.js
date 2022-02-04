@@ -18,4 +18,6 @@ export default class Person {
   getMarsYears() {
     this.yearsMars = Math.floor(this.yearsEarth * 1.88);
   }
+
+  getJupiterYears() {}
 }
