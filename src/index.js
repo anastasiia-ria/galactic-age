@@ -1,5 +1,5 @@
 import $ from "jquery";
 import "./css/styles.css";
-import Galactic from "./js/galactic.js";
+import Person from "./js/person.js";
 
 $(document).ready(function () {});
