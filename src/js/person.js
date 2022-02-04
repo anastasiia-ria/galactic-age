@@ -25,6 +25,9 @@ export default class Person {
       case "jupiter":
         planetYears = Math.floor(years * 11.86);
         break;
+      default:
+        planetYears = years;
+        break;
     }
     return planetYears;
   }

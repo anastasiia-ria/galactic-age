@@ -3,23 +3,32 @@ import "./css/styles.css";
 import Person from "./js/person.js";
 
 let newPerson;
-function displayYearsLeft(years) {
-  $(".years-left").show();
-  $("#mercury-years-left").html(newPerson.getMercuryYears(years));
-  $("#mars-years-left").html(newPerson.getMarsYears(years));
-  $("#jupiter-years-left").html(newPerson.getJupiterYears(years));
-  $("#venus-years-left").html(newPerson.getVenusYears(years));
+
+function displayInfo(id) {
+  let capitalize = id.substr(0, 1).toUpperCase() + id.substr(1);
+
+  $("#planet-age").html(newPerson.getGalacticYears(newPerson.yearsEarth, id));
+
+  if (newPerson.yearsLeft > 0) {
+    $("#years-left").show();
+    $(".planet").html(capitalize);
+    $("#planet-years-left").html(newPerson.getGalacticYears(newPerson.yearsLeft, id));
+  } else if (newPerson.yearsPassed > 0) {
+    $("#years-passed").show();
+    $(".planet").html(capitalize);
+    $("#planet-years-passed").html(newPerson.getGalacticYears(newPerson.yearsPassed, id));
+  }
 }
 
-function displayYearsPassed(years) {
-  $(".years-passed").show();
-  $("#mercury-years-passed").html(newPerson.getMercuryYears(years));
-  $("#mars-years-passed").html(newPerson.getMarsYears(years));
-  $("#jupiter-years-passed").html(newPerson.getJupiterYears(years));
-  $("#venus-years-passed").html(newPerson.getVenusYears(years));
+function attachPizzaListeners() {
+  $("#planets").on("click", "div", function () {
+    $("#info-box").toggle();
+    displayInfo(this.id);
+  });
 }
 
 $(document).ready(function () {
+  attachPizzaListeners();
   //Add checked class to checked items on click
   $("input").click(function () {
     $("input:not(:checked)").parent().removeClass("checked");
@@ -62,16 +71,15 @@ $(document).ready(function () {
     newPerson.getLifeExpectancy();
     newPerson.getYearsDifference();
 
-    $("#planets").show();
-    $("#mercury-age").html(newPerson.getMercuryYears(ageEarth));
-    $("#mars-age").html(newPerson.getMarsYears(ageEarth));
-    $("#venus-age").html(newPerson.getVenusYears(ageEarth));
-    $("#jupiter-age").html(newPerson.getJupiterYears(ageEarth));
+    $("#planets").addClass("flex");
+    $("#questions").removeClass("flex");
+  });
 
-    if (newPerson.yearsLeft > 0) {
-      displayYearsLeft(newPerson.yearsLeft);
-    } else if (newPerson.yearsPassed > 0) {
-      displayYearsPassed(newPerson.yearsPassed);
-    }
+  $("#start").click(function () {
+    $("#questions").addClass("flex");
+    $("#planets").removeClass("flex");
+    $("#info-box").hide();
+    $("#years-passed").hide();
+    $("#years-left").hide();
   });
 });
