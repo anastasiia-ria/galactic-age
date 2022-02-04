@@ -1,5 +1,6 @@
 body {
   background-image: url("../assets/images/background.png");
+  background-size: cover;
   margin: 0;
   padding: 0;
   color: white;
@@ -40,11 +41,7 @@ body {
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
-}
-
-.container {
-  width: 70vw;
-  position: relative;
+  opacity: 1;
 }
 
 #planets {
@@ -149,8 +146,15 @@ body {
   animation-delay: 3s;
 }
 
-#questions {
+#questions-box {
+  width: 70vw;
   display: none;
+}
+
+#questions {
+  margin: auto;
+  width: 500px;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
@@ -239,14 +243,13 @@ button {
   padding: 10px;
   position: absolute;
   top: 20px;
-  left: 25%;
+  left: calc(50% - 85px);
   font-size: 20px;
   display: none;
 }
 
 #start {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: (-50%, -50%);
+  right: 10%;
+  bottom: 10%;
 }

@@ -56,7 +56,7 @@ $(document).ready(function () {
     let laugh = $("input[name='laugh']").val();
 
     //Reset default input
-    $("input#age-input").val("");
+    $("input#input-age").val("");
     $("input").each(function () {
       if ($(this).val() === "rare" || $(this).val() === "less") {
         $(this).prop("checked", true);
@@ -72,11 +72,11 @@ $(document).ready(function () {
     newPerson.getYearsDifference();
 
     $("#planets").addClass("flex");
-    $("#questions").removeClass("flex");
+    $("#questions-box").hide();
   });
 
   $("#start").click(function () {
-    $("#questions").addClass("flex");
+    $("#questions-box").toggle();
     $("#planets").removeClass("flex");
     $("#info-box").hide();
     $("#years-passed").hide();
