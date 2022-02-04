@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1643993255107" clover="3.2.0">
-  <project timestamp="1643993255107" name="All files">
-    <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4" elements="11" coveredelements="11" complexity="0" loc="7" ncloc="7" packages="1" files="1" classes="1"/>
+<coverage generated="1643993308912" clover="3.2.0">
+  <project timestamp="1643993308912" name="All files">
+    <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4" elements="12" coveredelements="12" complexity="0" loc="8" ncloc="8" packages="1" files="1" classes="1"/>
     <file name="person.js" path="/Users/anastasiiariabets/Desktop/galactic-age/src/js/person.js">
-      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
       <line num="3" count="4" type="stmt"/>
       <line num="4" count="4" type="stmt"/>
       <line num="5" count="4" type="stmt"/>
@@ -11,6 +11,7 @@
       <line num="7" count="4" type="stmt"/>
       <line num="11" count="1" type="stmt"/>
       <line num="15" count="1" type="stmt"/>
+      <line num="19" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>
