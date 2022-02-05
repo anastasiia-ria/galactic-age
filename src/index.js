@@ -71,15 +71,28 @@ $(document).ready(function () {
     newPerson.getLifeExpectancy();
     newPerson.getYearsDifference();
 
-    $("#planets").addClass("flex");
+    $("#planets-box").show();
     $("#questions-box").hide();
+    $("#pointer").show();
   });
 
   $("#start").click(function () {
     $("#questions-box").toggle();
-    $("#planets").removeClass("flex");
+    $("#planets-box").hide();
     $("#info-box").hide();
     $("#years-passed").hide();
     $("#years-left").hide();
+    $("#pointer").hide();
+
+    $("input#input-age").val("");
+    $("input").each(function () {
+      if ($(this).val() === "rare" || $(this).val() === "less") {
+        $(this).prop("checked", true);
+        $(this).parent().addClass("checked");
+      } else {
+        $(this).prop("checked", false);
+        $(this).parent().removeClass("checked");
+      }
+    });
   });
 });
