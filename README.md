@@ -17,7 +17,7 @@
 
 ## Description
 
-Super Galactic Age Calculator determines age a user's age based on a planet's solar years.
+Super Galactic Age Calculator determines a user's age based on a planet's solar years.
 
 ## Setup/Installation Requirements
 
@@ -44,7 +44,7 @@ Super Galactic Age Calculator determines age a user's age based on a planet's so
 
 ## Known Bugs
 
--
+- Layout is not adjusted for small screens
 
 ## License
 
