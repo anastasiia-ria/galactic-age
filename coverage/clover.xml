@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1644019356547" clover="3.2.0">
-  <project timestamp="1644019356547" name="All files">
-    <metrics statements="47" coveredstatements="45" conditionals="17" coveredconditionals="16" methods="4" coveredmethods="4" elements="68" coveredelements="65" complexity="0" loc="47" ncloc="47" packages="1" files="1" classes="1"/>
+<coverage generated="1644019451632" clover="3.2.0">
+  <project timestamp="1644019451632" name="All files">
+    <metrics statements="47" coveredstatements="47" conditionals="17" coveredconditionals="17" methods="4" coveredmethods="4" elements="68" coveredelements="68" complexity="0" loc="47" ncloc="47" packages="1" files="1" classes="1"/>
     <file name="person.js" path="/Users/anastasiiariabets/Desktop/galactic-age/src/js/person.js">
-      <metrics statements="47" coveredstatements="45" conditionals="17" coveredconditionals="16" methods="4" coveredmethods="4"/>
-      <line num="3" count="14" type="stmt"/>
-      <line num="4" count="14" type="stmt"/>
-      <line num="5" count="14" type="stmt"/>
-      <line num="6" count="14" type="stmt"/>
-      <line num="7" count="14" type="stmt"/>
-      <line num="8" count="14" type="stmt"/>
-      <line num="9" count="14" type="stmt"/>
-      <line num="10" count="14" type="stmt"/>
-      <line num="15" count="6" type="cond" truecount="6" falsecount="1"/>
+      <metrics statements="47" coveredstatements="47" conditionals="17" coveredconditionals="17" methods="4" coveredmethods="4"/>
+      <line num="3" count="15" type="stmt"/>
+      <line num="4" count="15" type="stmt"/>
+      <line num="5" count="15" type="stmt"/>
+      <line num="6" count="15" type="stmt"/>
+      <line num="7" count="15" type="stmt"/>
+      <line num="8" count="15" type="stmt"/>
+      <line num="9" count="15" type="stmt"/>
+      <line num="10" count="15" type="stmt"/>
+      <line num="15" count="7" type="cond" truecount="7" falsecount="0"/>
       <line num="17" count="1" type="stmt"/>
       <line num="18" count="1" type="stmt"/>
       <line num="20" count="1" type="stmt"/>
@@ -25,9 +25,9 @@
       <line num="30" count="1" type="stmt"/>
       <line num="32" count="1" type="stmt"/>
       <line num="33" count="1" type="stmt"/>
-      <line num="35" count="0" type="stmt"/>
-      <line num="36" count="0" type="stmt"/>
-      <line num="38" count="6" type="stmt"/>
+      <line num="35" count="1" type="stmt"/>
+      <line num="36" count="1" type="stmt"/>
+      <line num="38" count="7" type="stmt"/>
       <line num="42" count="5" type="cond" truecount="2" falsecount="0"/>
       <line num="44" count="1" type="stmt"/>
       <line num="45" count="1" type="stmt"/>
