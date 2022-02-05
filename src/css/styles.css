@@ -56,25 +56,30 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   margin: 10px;
-  animation: float 3s linear infinite;
   cursor: pointer;
 }
 
-@keyframes float {
+@keyframes floatDown {
   0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(5%, 0);
+    transform: translatey(0px);
   }
   50% {
-    transform: translate(5%, 5%);
-  }
-  75% {
-    transform: translate(0, 5%);
+    transform: translatey(-7px);
   }
   100% {
-    transform: translate(0, 0);
+    transform: translatey(0px);
+  }
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(7px);
+  }
+  100% {
+    transform: translatey(0px);
   }
 }
 
@@ -82,14 +87,14 @@ body {
   width: 40px;
   height: 40px;
   background-image: url("../assets/images/planets/mercury.jpeg");
-  animation-delay: 1s;
+  animation: floatUp 3s linear infinite;
 }
 
 #venus {
   width: 60px;
   height: 60px;
   background-image: url("../assets/images/planets/venus.jpeg");
-  animation-delay: 2s;
+  animation: floatDown 3s linear infinite;
 }
 
 #earth {
@@ -99,51 +104,49 @@ body {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  animation-delay: 3s;
+  animation: floatUp 3s linear infinite;
 }
 
 #mars {
   width: 63px;
   height: 63px;
   background-image: url("../assets/images/planets/mars.jpeg");
-  animation-delay: 4s;
+  animation: floatDown 3s linear infinite;
 }
 
 #jupiter {
   width: 140px;
   height: 140px;
   background-image: url("../assets/images/planets/jupiter.png");
-  animation-delay: 1s;
+  animation: floatUp 3s linear infinite;
 }
 
 #saturn {
   width: 250px;
   height: 90px;
   background-image: url("../assets/images/planets/saturn.jpg");
+  animation: floatDown 3s linear infinite;
 }
 
 #uranus {
   width: 80px;
   height: 80px;
   background-image: url("../assets/images/planets/uranus.jpeg");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  animation-delay: 10ms;
+  animation: floatUp 3s linear infinite;
 }
 
 #neptune {
   width: 85px;
   height: 85px;
   background-image: url("../assets/images/planets/neptune.jpeg");
-  animation-delay: 2s;
+  animation: floatDown 3s linear infinite;
 }
 
 #pluto {
   width: 30px;
   height: 30px;
   background-image: url("../assets/images/planets/pluto.jpeg");
-  animation-delay: 3s;
+  animation: floatUp 3s linear infinite;
 }
 
 #questions-box {
