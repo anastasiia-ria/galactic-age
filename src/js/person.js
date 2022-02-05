@@ -37,6 +37,9 @@ export default class Person {
       case "pluto":
         planetYears = Math.round((years / 248.59) * 100) / 100;
         break;
+      default:
+        planetYears = years;
+        break;
     }
     return planetYears;
   }
