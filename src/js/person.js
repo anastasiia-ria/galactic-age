@@ -28,6 +28,9 @@ export default class Person {
       case "saturn":
         planetYears = Math.round((years / 29.48) * 100) / 100;
         break;
+      case "uranus":
+        planetYears = Math.round((years / 84.07) * 100) / 100;
+        break;
       default:
         planetYears = years;
         break;
