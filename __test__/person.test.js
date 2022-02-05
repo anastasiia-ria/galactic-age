@@ -44,6 +44,10 @@ describe("Person", () => {
     expect(newPerson.getGalacticYears(years, "neptune")).toEqual(0.15);
   });
 
+  test("should correctly return a user's age in Pluto years", () => {
+    expect(newPerson.getGalacticYears(years, "pluto")).toEqual(0.1);
+  });
+
   test("should correctly return a user's life expectancy Human years", () => {
     newPerson.getLifeExpectancy();
     expect(newPerson.lifeExpectancy).toEqual(90);
