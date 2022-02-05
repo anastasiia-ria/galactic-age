@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Galactic Age</title>
+  </head>
+  <body>
+    <div id="solar-system">
+      <div id="sun"></div>
+      <div id="planets-box">
+        <div id="planets">
+          <div id="mercury"></div>
+          <div id="venus"></div>
+          <div id="earth"></div>
+          <div id="mars"></div>
+          <div id="jupiter"></div>
+          <div id="saturn"></div>
+          <div id="uranus"></div>
+          <div id="neptune"></div>
+          <div id="pluto"></div>
+        </div>
+      </div>
+      <div id="pointer"></div>
+      <div id="info-box">
+        <h2><span class="planet"></span></h2>
+        <p>You are <span id="planet-age"></span> years old in <span class="planet"></span> years</p>
+        <p id="years-left">You have about <span id="planet-years-left"></span> more <span class="planet"></span> years to live here</p>
+        <p id="years-passed">You have lived about <span id="planet-years-passed"></span> years past life expectancy in <span class="planet"></span> years</p>
+      </div>
+      <button type="button" id="start">Start</button>
+      <div id="questions-box">
+        <form id="questions">
+          <input type="number" id="input-age" placeholder="Please, enter your age" min="1" required />
+          <label class="question">How often do you eat junk food?</label>
+          <div class="form-group">
+            <label>
+              <input type="radio" name="junk-food" value="rare" />
+              Rarely
+            </label>
+            <label>
+              <input type="radio" name="junk-food" value="sometimes" />
+              Sometimes
+            </label>
+            <label>
+              <input type="radio" name="junk-food" value="often" />
+              Often
+            </label>
+          </div>
+          <label class="question">How often do you exercise?</label>
+          <div class="form-group">
+            <label>
+              <input type="radio" name="sport" value="rare" />
+              Rarely
+            </label>
+            <label>
+              <input type="radio" name="sport" value="sometimes" />
+              Sometimes
+            </label>
+            <label>
+              <input type="radio" name="sport" value="often" />
+              Often
+            </label>
+          </div>
+          <label class="question">How long do you usually sleep?</label>
+          <div class="form-group">
+            <label>
+              <input type="radio" name="sleep" value="less" />
+              < 6-8 hours
+            </label>
+            <label>
+              <input type="radio" name="sleep" value="enough" />
+              6-8 hours
+            </label>
+            <label>
+              <input type="radio" name="sleep" value="more" />
+              > 6-8 hours
+            </label>
+          </div>
+          <label class="question">How often do you laugh?</label>
+          <div class="form-group">
+            <label>
+              <input type="radio" name="laugh" value="rare" />
+              Rarely
+            </label>
+            <label>
+              <input type="radio" name="laugh" value="sometimes" />
+              Sometimes
+            </label>
+            <label>
+              <input type="radio" name="laugh" value="often" />
+              Often
+            </label>
+          </div>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  <script defer src="bundle.js"></script></body>
+</html>
