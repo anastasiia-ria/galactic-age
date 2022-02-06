@@ -50,24 +50,13 @@ $(document).ready(function () {
     event.preventDefault();
     //Get input
     let ageEarth = parseInt($("input#input-age").val());
-    let junkFood = $("input[name='junk-food']").val();
-    let sport = $("input[name='sport']").val();
-    let sleep = $("input[name='sleep']").val();
-    let laugh = $("input[name='laugh']").val();
-
-    //Reset default input
-    $("input#input-age").val("");
-    $("input").each(function () {
-      if ($(this).val() === "rare" || $(this).val() === "less") {
-        $(this).prop("checked", true);
-        $(this).parent().addClass("checked");
-      } else {
-        $(this).prop("checked", false);
-        $(this).parent().removeClass("checked");
-      }
-    });
+    let junkFood = $("input[name='junk-food']:checked").val();
+    let sport = $("input[name='sport']:checked").val();
+    let sleep = $("input[name='sleep']:checked").val();
+    let laugh = $("input[name='laugh']:checked").val();
 
     newPerson = new Person(ageEarth, junkFood, sport, sleep, laugh);
+    console.log(newPerson);
     newPerson.getLifeExpectancy();
     newPerson.getYearsDifference();
 
