@@ -48,7 +48,6 @@ export default class Person {
     switch (this.junkFood) {
       case "rare":
         this.lifeExpectancy += 5;
-        console.log("food");
         break;
       case "often":
         this.lifeExpectancy -= 5;
@@ -60,8 +59,6 @@ export default class Person {
         break;
       case "often":
         this.lifeExpectancy += 5;
-
-        console.log("sport");
         break;
     }
     switch (this.sleep) {
@@ -70,8 +67,6 @@ export default class Person {
         break;
       case "enough":
         this.lifeExpectancy += 5;
-
-        console.log("sleep");
         break;
     }
     switch (this.laugh) {
@@ -80,8 +75,6 @@ export default class Person {
         break;
       case "often":
         this.lifeExpectancy += 5;
-
-        console.log("laugh");
         break;
     }
   }

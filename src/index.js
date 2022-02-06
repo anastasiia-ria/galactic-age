@@ -56,7 +56,6 @@ $(document).ready(function () {
     let laugh = $("input[name='laugh']:checked").val();
 
     newPerson = new Person(ageEarth, junkFood, sport, sleep, laugh);
-    console.log(newPerson);
     newPerson.getLifeExpectancy();
     newPerson.getYearsDifference();
 
