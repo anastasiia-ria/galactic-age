@@ -37,7 +37,7 @@ Super Galactic Age Calculator determines a user's age based on a planet's solar 
   3. Install necessary dependencies:
      ```
      $ cd ~/Desktop/galactic-age
-     $ npm install https://github.com/anastasiia-ria/galactic-age.git
+     $ npm install
      ```
   4. Run:
 
